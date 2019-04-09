@@ -1,0 +1,110 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+
+
+{% block main %}
+<form action="/register" method="post" id="reg">
+
+        	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form">
+					<span class="login100-form-title p-b-26">
+						Welcome
+					</span>
+
+
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+						<input class="input100" type="text" name="username" id="username">
+						<span class="focus-input100" data-placeholder="Name"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Enter password">
+						<span class="btn-show-pass">
+							<i class="zmdi zmdi-eye"></i>
+						</span>
+						<input class="input100" type="password" name="password">
+						<span class="focus-input100" data-placeholder="Password"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Enter password">
+						<span class="btn-show-pass">
+							<i class="zmdi zmdi-eye"></i>
+						</span>
+						<input class="input100" type="password" name="password">
+						<span class="focus-input100" data-placeholder="Re-write your password"></span>
+					</div>
+
+
+
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button class="login100-form-btn">
+								Register
+							</button>
+						</div>
+					</div>
+					</form>
+					<div class="text-center p-t-115">
+						<span class="txt1">
+							Have an account?
+						</span>
+
+						<a class="txt2" href="/login">
+							Log In
+						</a>
+					</div>
+
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="dropDownSelect1"></div>
+
+	</form>
+
+
+    <script>
+
+    let form = document.getElementById("reg");
+
+        $(form).submit(function(event) {
+            let username = document.getElementById("username").value;
+
+            event.preventDefault();
+
+
+
+            $.get("/check?username=" + username, function(output) {
+
+                switch(output){
+
+                    case true:
+                        form.submit();
+                        break;
+
+                    default:
+                        alert("Username Not available");
+                        event.preventDefault();
+
+
+                }
+
+
+            });
+        });
+
+</script>
+
+
+
+
+{% endblock %}
