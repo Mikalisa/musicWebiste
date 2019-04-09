@@ -2,25 +2,34 @@
 $(document).ready(function() {
 	var songs = [
 		{
-			"title": "Misses",
-			"artist": "Girls in Hawaii",
-			"cover": "C:\Users\pc\Desktop\project\static\images/music.png",
+			"title": "Amigo Apaixonado",
+			"artist": "Victor & Leo",
+			"cover": "https://dumielauxepices.net/sites/default/files/music-icons-circle-692290-6699718.png",
 			"num": "0",
 			"darkColor": "#3A4E55",
 			"lightColor": "#F2F2F2"
 		},
 		{
-			"title": "Walk Away From The Sun",
-			"artist": "Seether",
-			"cover": "C:\Users\pc\Desktop\project\static\images/music.png",
+			"title": "Sinto Falta de Você",
+			"artist": "Victor e Leo",
+			"cover": "https://dumielauxepices.net/sites/default/files/music-icons-circle-692290-6699718.png",
 			"num": "1",
 			"darkColor": "#4B3A40",
 			"lightColor": "#E0D9C6"
 		},
 		{
-			"title": "The Fifth Guardian, Interlude",
-			"artist": "Epica",
-			"cover": "C:\Users\pc\Desktop\project\static\images/music.png",
+			"title": "Meu Eu em Você",
+			"artist": "Victor & Leo",
+			"cover": "https://dumielauxepices.net/sites/default/files/music-icons-circle-692290-6699718.png",
+			"num": "2",
+			"darkColor": "#231F16",
+			"lightColor": "#FFF8E8"
+		}
+		,
+		{
+			"title": "fotos",
+			"artist": "Victor & Leo",
+			"cover": "https://dumielauxepices.net/sites/default/files/music-icons-circle-692290-6699718.png",
 			"num": "2",
 			"darkColor": "#231F16",
 			"lightColor": "#FFF8E8"

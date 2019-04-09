@@ -221,9 +221,9 @@ $(document).ready(function()
 			$("#jplayer_1").jPlayer({
 				ready: function () {
 					$(this).jPlayer("setMedia", {
-						title:"Better Days",
+						title:"H.O.L.Y.",
 							artist:"Bensound",
-							mp3:'static/files/onclassical_luisi_bach_partita_e-minor_bwv-830_1.mp3'
+							mp3:'static/files/Florida_Georgia_Line_-_H.O.L.Y.mp3'
 					});
 				},
 				play: function() { // To avoid multiple jPlayers playing together.
