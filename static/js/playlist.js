@@ -30,7 +30,7 @@ $(document).ready(function() {
 			"title": "fotos",
 			"artist": "Victor & Leo",
 			"cover": "https://dumielauxepices.net/sites/default/files/music-icons-circle-692290-6699718.png",
-			"num": "2",
+			"num": "3",
 			"darkColor": "#231F16",
 			"lightColor": "#FFF8E8"
 		}
